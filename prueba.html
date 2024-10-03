@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="text-uppercase text-primary font-weight-bold text-xs mb-1">
+        <span>Temperatura</span>
+    </div>
+    <div class="text-dark font-weight-bold h5 mb-0">
+        <span id="temp"></span>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Simulate data from "data.php" for testing purposes
+            var testData = [{ TEMPERATURA: 23.5, PH: 7.4, TURBIDEZ: 12, CONDUCTIVIDAD: 500 }];
+
+            // Assuming "data.php" would return an array of objects with properties
+            function showGraph(data) {
+                var name = [];
+                name.push(data[0].TEMPERATURA);
+                document.getElementById("temp").innerText = name[0]; // Update only "Temperatura"
+            }
+
+            showGraph(testData[0]); // Pass the first object from testData
+        });
+    </script>
+</body>
+</html>

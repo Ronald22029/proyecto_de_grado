@@ -1,0 +1,58 @@
+/* estilos.css */
+
+body {
+    background: url('../assets/img/image2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    position: relative;
+    /*background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px); /* Efecto de fondo borroso */
+    -webkit-backdrop-filter: blur(10px); /* Efecto de fondo borroso para Safari */
+}
+
+.login-container h2 {
+    text-align: center;
+    padding: 100px;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 15px;
+   
+    
+}
+
+.btn-user {
+    width: 100%;
+
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.alert span {
+    color: var(--pink);
+}
+
+#content-wrapper, #content {
+    background-color: #0d0025 !important;
+}
+
+.chart-container {
+    background-color: #0d0025; /* Color azul marino */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 10px; /* Ajusta el borde redondeado según sea necesario */
+}
+
